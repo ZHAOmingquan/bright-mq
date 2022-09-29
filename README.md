@@ -1,3 +1,4 @@
+中国境内仓库： https://gitee.com/mingzy/bright-mq.git
 ### 介绍
 - BrightMQ是基于mysql-binlog的轻量级高性能开源的消息队列中间件，利用数据库特性，极少的代码实现服务间的异步解耦、数据一致性、重复消费等问题。
 - 使用独立数据源，无业务侵入。
