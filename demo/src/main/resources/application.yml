@@ -1,0 +1,26 @@
+# 服务原本的业务数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 此处需要注意，原来若是url则需改成jdbc-url
+    jdbc-url: jdbc:mysql://rm-uf66903d9ae3a6k15fo.mysql.rds.aliyuncs.com:3306/ming_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: ming
+    password: 2022Bright=spring--
+
+
+# mq消息存储数据源
+bright-mq:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  jdbc-url: jdbc:mysql://rm-uf66903d9ae3a6k15fo.mysql.rds.aliyuncs.com:3306/bright-mq?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+  username: ming
+  password: 2022Bright=spring--
+  # 监听binlog的service-id。执行sql脚本 show variables like 'server_id'; 进行查看
+  binlog-service-id: 20571336
+  #消费失败的消息，重试消费任务配置
+  consume-task:
+    # 重试次数：不配置则默认重试10次
+    max-failed-times: 15
+    # 重试时间间隔：不配置则默认每次执行结束后10秒再次重试,单位毫秒
+    fixed-delay: 2000000
+
+

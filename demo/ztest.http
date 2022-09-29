@@ -1,0 +1,13 @@
+
+
+###
+GET http://localhost:8080/ztest/send
+
+###
+GET http://localhost:8080/ztest/createTopic
+
+###
+GET http://localhost:8080/ztest/saveBatch
+
+###
+GET http://localhost:8080/ztest/sendManyTopic

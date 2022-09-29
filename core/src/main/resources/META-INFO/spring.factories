@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.mzy.brightmq.config.BrightAutoDataSourceConfig,com.mzy.brightmq.config.BrightAutoBinLogClientConfig
